@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Quark Labs</title>
+
+    <!-- Load Bulma from CDN (consider saving it to repository instead) -->
+    <!-- https://bulma.io/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+    <!-- Load Font Awesome 5 (free) icons -->
+    <script src="https://kit.fontawesome.com/41c37b4cb6.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="has-background-grey-dark has-text-white-bis">
+  <!-- Page header -->
+  <!-- https://bulma.io/documentation/layout/hero/ -->
+  <section class="hero is-medium" style="background-image: linear-gradient(to right, red, yellow);">
+    <div class="hero-body">
+      <div class="container">
+        <!-- TODO: Change title -->
+        <h1 class="title headline">Hello World!</h1>
+        <!-- TODO: Change subtitle -->
+        <h2 class="subtitle sub-header">I'm Sid or Quark.</h2>
+      </div>
+    </div>
+  </section>
+  <!-- End page header -->
+
+  <!-- Page navigation -->
+  <!-- https://bulma.io/documentation/components/navbar/ -->
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <!-- f: Change link to repository homepage if needed -->
+        <!-- TODO: Change which navbar-item is-active if needed -->
+        <a class="navbar-item is-active" href="index.html">
+          <span class="icon"><i class="fa-solid fa-jedi"></i></span>
+          <span>Home</span>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="main-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="main-menu" class="navbar-menu has-text-weight-medium">
+        <!-- Left navbar items -->
+        <div class="navbar-start">
+
+          <a class="navbar-item" href="github.com/" title="Data">
+            <span class="icon"><i class="fa-brands fa-github-alt"></i></span>
+            <span>My github</span>
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Segments
+            </a>
+
+            <div class="navbar-dropdown">
+
+              <a class="navbar-item" href="#projects">
+                <p><i class="fa-solid fa-code"></i>&nbsp; My Projects</p>
+              </a>
+
+              <a class="navbar-item">
+                <p><i class="fa-solid fa-images"></i>&nbsp; Gallery</p>
+              </a>
+
+              <a class="navbar-item" href="#technologies">
+                <p><i class="fa-solid fa-user"></i>&nbsp; My Technologies</p>
+              </a>
+
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <!-- Right navbar items -->
+        <div class="navbar-end">
+          <!-- TODO: Update as needed -->
+          <a class="navbar-item" href="https://sky.shiiyu.moe/stats/QuarksField/Lemon" title="About">
+            <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+            <span>SkyCrypt</span>
+          </a>
+
+          <a class="navbar-item" href="#about" title="About">
+            <span class="icon"><i class="fas fa-info-circle"></i></span>
+            <span>About</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End page navigation -->
+
+  <section class="section has-white-text-ter">
+    <div class="container has-white-text-ter">
+      <!-- Begin page content -->
+      <div class="content">
+
+        <div class="about has-white-text-ter" id="about">
+          <h2 class="title" style="color:white"><p> Who am I? </p></h2>
+
+          <p> I'm Sid; coding is kind of enjoyable so I do it from time to time. I've only been coding for 2 years or so over the pandemic, but I'm not too amazing or anything and to be frank,
+            there are very few instances where I actually know what I'm doing. But it's been my goal for the past few months to change that. Or, at least, learn some technology or framework to the point where I'm
+            not just floundering through the docs like I did for <a href="https://bulma.io/docs">Bulma</a> trying to make this website. (side note: there was considerably less floundering because bulma is super easy to work with. check it out!)
+          </p>
+
+          <p> So for this technology that I  chose to learn extensively, it's Golang. A quick apology to the Gopher community, but I'm coming and I wanna join. So far my learning of go has been going pretty well-
+            there are so many more useful resources to learn go than there are python, or C#/C++ (side note- the microsoft docs exist but those assume I've been through college and know what the hell they're talking about)
+            I'll leave a list below for the Gopheresources I found useful, anyways.
+          </p>
+
+          <ul>
+            <li><a href="https://gophercises.com">Gophercises</a></li>
+            <li><a href="https://go.dev/doc/code">How to Write Go Code</a></li>
+            <li><a href="https://awesome-go.com">Awesome go frameworks!</a></li>
+          </ul>
+          <br id="projects">
+          <h1 style="color:white">My Projects</h1>
+
+          <div class="card reveal-card">
+            <div class="card-image">
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="-https://static.wikia.nocookie.net/hypixel-skyblock/images/d/d6/Refined_Mithril.png/revision/latest?cb=20210119063706" alt="MithrilBot">
+                  </figure> <!--https://static.wikia.nocookie.net/hypixel-skyblock/images/d/d6/Refined_Mithril.png/revision/latest?cb=20210119063706-->
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">MithrilBot [WIP]</p>
+                  <p class="subtitle is-6">Does one simple thing- returns the mithril collection of any one player.</p>
+                </div>
+              </div>
+
+              <div class="content">
+                This simple bot is great for discords of mining guilds.
+                Our team is working on a "Mithril weight" feature, which weighs a player's mining collections,
+                HOTM experience, Mining Skill experience and other things to determine their Weight,
+                which you can utilize to set guild requirements. </br> </br>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=1008889385367904338&permissions=8&scope=bot">
+                <button class="button" style="background-color: rgb(255,21,0);">
+                    <i class="fa-brands fa-discord"></i>&nbsp;Invite Me!
+                </button>
+              </a>
+                <br>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="card reveal-card">
+            <div class="card-image">
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://th.bing.com/th/id/OIP.ihO2sPG3Tev8QMYJjmdTCAAAAA?w=145&h=150&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="Paper minecraft logo">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Quick Paper Minecraft Server</p>
+                  <p class="subtitle is-6">Setting up a server that runs 24/7 on a VPS is always complicated, especially with mods in the mix. With QPMS, the whole ordeal will be over in 30 minutes.</p>
+                </div>
+              </div>
+
+              <div class="content">
+                The function of QPMS is very simple- to ease your minecraft-server-setting-up experience to the point where it's no hassle to set it up for friends and family.
+                the package is for Debian/Ubuntu systems, and while I'm still working on tutorials for setting it up with Oracle Cloud and Azure, and also support for Windows,
+                but the pain of messing around with file trees and fidgeting with the settings dissapears- you can do it on your own computer, in your own code editor, in your own time
+                and once you're on your VPS server, cloning your customized repo is a breeze.</br> </br>
+                <a href="https://github.com/QuarkField/quick-paper-server">
+                  <button class="button" style="background-color: rgb(255,21,0);">
+                    <i class="fa-brands fa-github"></i>&nbsp;Github
+                  </button>
+                </a>
+                <br>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="card reveal-card">
+            <div class="card-image">
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://th.bing.com/th/id/R.d417d846af48368c0444b079550e24a4?rik=Fq0lXOvRj7xMrw&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_1660.png&ehk=DnrAyXJMThHsts1Koqk3IxbzIYPrcPRXo6vn69pbct4%3d&risl=&pid=ImgRaw&r=0" alt="Shell bash">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Gogetter CLI</p>
+                  <p class="subtitle is-6">A small beginner project in Golang. It's not finished and probably never will be but it's there anyways.</p>
+                </div>
+              </div>
+
+              <div class="content">
+                This project was supposed to be a simple package manager that utilized a simple form of wget, but it devolved into an industrial-level solution for
+                helping users download your package. for that reason it won't ever be fully finished but once I finish learning go and maybe can call myself an expert,
+                I'll maybe come back to it and finish the original, smaller project.</br> </br>
+                <a href="https://github.com/gogettercli/cli">
+                  <button class="button" style="background-color: rgb(255,21,0);">
+                    <i class="fa-brands fa-github"></i>&nbsp;Github
+                  </button>
+                </a>
+                <br>
+              </div>
+            </div>
+          </div>
+
+          <br id="technologies">
+          <br>
+
+          <h1 class="title" style="color:white"> My Technologies and Languages </h1>
+          <br>
+          <div class="tile is-ancestor">
+            <div class="tile is-3 is-vertical is-parent">
+              <div class="tile is-child box">
+                <p class="title">C#</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Python</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Golang</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">CSS</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">HTML</p>
+              </div>
+            </div>
+
+            <div class="tile is-3 is-vertical is-parent is-centered-custom">
+              <div class="tile is-child box">
+                <p class="title">sqlite3</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Flask</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Discord.Py</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Bulma</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Negroni</p>
+              </div>
+            </div>
+
+            <div class="tile is-3 is-vertical is-parent is-right-custom">
+              <div class="tile is-child box">
+                <p class="title">VScode</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Visual Studio</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Paint.net</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Atom</p>
+              </div>
+
+              <div class="tile is-child box">
+                <p class="title">Sublime text</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          </div>
+
+        </div>
+    </div>
+
+  </section>
+
+  <!-- Page footer -->
+  <!-- https://bulma.io/documentation/layout/footer/ -->
+  <footer class="footer is-info">
+    <div class="content has-text-centered is-size-7 ">
+      <p>
+        <a href="#top">
+          <span class="fas fa-arrow-up"></span>
+          <span class="has-text-weight-medium">Back to Top</span>
+        </a>
+      </p>
+
+      <p>
+
+        <a href="https://fontawesome.com/" class="button is-small" style="padding-left: 1em; padding-right: 1em;">
+          <i class="fab fa-font-awesome"></i>&nbsp;<strong>FontAwesome</strong>
+        </a>
+
+        <a href="https://bulma.io" class="button is-small">
+          <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="128" height="24">
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src='http://scrollrevealjs.org/js/scrollReveal.min.js?ver=2.0.1'></script>
+  <style>
+  html {
+  scroll-behavior: smooth;
+  }
+
+  .is_header_gradient{
+    background-image: linear-gradient(to bottom right, red, yellow);
+  }
+
+  .light-text{
+    color: #fff;
+  }
+
+  .is-centered-custom{
+    position: absolute;
+    left: 400px;
+  }
+
+  .is-right-custom{
+    position: absolute;
+    left: 800px;
+  }
+
+  .box:hover{
+    transform: translateX(5px);
+    background-color: rgb(255,21,0);
+    transition-duration: 0.2s;
+  }
+  </style>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+  const dropdowns = document.querySelectorAll('.dropdown:not(.is-hoverable)');
+
+  if (dropdowns.length > 0) {
+  // For each dropdown, add event handler to open on click.
+  dropdowns.forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.stopPropagation();
+      el.classList.toggle('is-active');
+    });
+  });
+
+  // If user clicks outside dropdown, close it.
+  document.addEventListener('click', function(e) {
+    closeDropdowns();
+  });
+  }
+
+  /*
+  * Close dropdowns by removing `is-active` class.
+  */
+  function closeDropdowns() {
+  dropdowns.forEach(function(el) {
+    el.classList.remove('is-active');
+  });
+  }
+
+  // Close dropdowns if ESC pressed
+  document.addEventListener('keydown', function (event) {
+  let e = event || window.event;
+  if (e.key === 'Esc' || e.key === 'Escape') {
+    closeDropdowns();
+  }
+  });
+
+
+  //SCROLLREVEAL STUFF!!
+   ScrollReveal({ reset: false, delay:300, distance:'30px'});
+   ScrollReveal().reveal('.headline', {origin: 'left'});
+   ScrollReveal().reveal('.sub-header', {origin: 'right'});
+   ScrollReveal().reveal('.reveal-card',{origin: 'bottom'});
+
+
+  </script>
+  </body>
+
+</html>
